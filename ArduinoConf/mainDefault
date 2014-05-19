@@ -1,0 +1,19 @@
+	if(Serial.available()){
+		delay(21);
+    		char input[32]="";
+    		String command;
+    		String service;
+    		String action;
+    		int i=0;
+    		while(Serial.available()){
+      			input[i] = Serial.read();
+      			i++;      
+    		}
+    		Serial.flush();
+    		String inputS = input;    
+    		int index = inputS.indexOf('-');
+    		int index2 = inputS.indexOf('-', index+1);
+    		command = inputS.substring(0,index);
+    		service = inputS.substring(index+1,index2);
+    		action = inputS.substring(index2+1);
+    		switch(service.toInt()){

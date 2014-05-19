@@ -1,0 +1,4 @@
+			case service_intercom: //intercom
+      				if(command == "SEND")
+        				openDoor_Intercom();
+        			break;
