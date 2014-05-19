@@ -1,7 +1,0 @@
-			case service_lights:    //lights
-        			if(command == "SEND")
-          				perform_LightControl(action);
-				Serial.print("UPDATE"); Serial.print("-"); Serial.print(idDevice); Serial.print("-");
-        			Serial.print(service_IR); Serial.print("-");
-        			getIRstate();
-        			break;

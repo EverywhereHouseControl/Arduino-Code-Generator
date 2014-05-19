@@ -1,4 +1,0 @@
-	default:
-		Serial.print("ERROR"); Serial.print("-"); Serial.print(idDevice); Serial.print("-");
-        	Serial.print(service); Serial.print("-"); Serial.println(action);
-        	break;
