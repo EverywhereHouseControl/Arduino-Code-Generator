@@ -705,6 +705,7 @@ public class Gen {
 	    }
 	    String s = new Scanner(new File(textField_27.getText()+"/DEFAULT_Action")).useDelimiter("\\Z").next();
 	    p.println(s);
+	    p.println("\t\t\t}");
 	    p.println("\t\t}");
 	    p.println("\t\tSerial.flush();");
 	    p.println("\t}");

@@ -1,7 +1,7 @@
-			case service_blinds: //blinds
-        			if(command == "SEND")
-					action_blindSensors(action);
-				Serial.print("UPDATE"); Serial.print("-"); Serial.print(idDevice); Serial.print("-");      
-        			Serial.print(service_blinds); Serial.print("-");
-        			getBlindSensorsState();
-        			break;
+				case service_blinds: //blinds
+        				if(command == "SEND")
+						action_blindSensors(action);
+					Serial.print("UPDATE"); Serial.print("-"); Serial.print(idDevice); Serial.print("-");      
+        				Serial.print(service_blinds); Serial.print("-");
+        				getBlindSensorsState();
+        				break;
